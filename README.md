@@ -4,15 +4,7 @@
 3. В каждом тесте из папки «Tests» прописываем путь до драйвера в @Before class (System.setProperty) вместо моего "/Users/aguseva/chromedriver".
 4. Запускаем тесты.
 5. Возможно, потребуется обновление используемых библиотек, которые прописаны в файле pom.xml проекта.
-Для обновления нужно перейти на https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java, выбрать последнюю версию и скопировать данные вот такого вида:
-
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.11.0</version>
-</dependency> 
-
-в pom.xml вместо устаревших. То же проделать с библиотекой junit - https://mvnrepository.com/artifact/junit/junit.
+Для обновления нужно перейти на https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java, выбрать последнюю версию и скопировать данные в pom.xml вместо устаревших. То же проделать с библиотекой junit - https://mvnrepository.com/artifact/junit/junit (подробнее об этом можно посмотреть в гайде http://www.autotest.org.ua/perviy-autotest-s-selenium-webdriver-java-1/.
 
 В тестах проверяются положительные проверки функционала:
 
