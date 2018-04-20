@@ -1,8 +1,19 @@
 # Tests 
-1. Устанавливаем последнюю версию chromedriver (у меня — 2.36).
-2. Заходим в IntellIJ IDEA и нажимаем Import Project (загружаем проект).
+1. Устанавливаем последнюю версию chromedriver (https://sites.google.com/a/chromium.org/chromedriver/downloads).
+2. Заходим в IntellIJ IDEA и нажимаем Import Project (загружаем проект Autotest).
 3. В каждом тесте из папки «Tests» прописываем путь до драйвера в @Before class (System.setProperty) вместо моего "/Users/aguseva/chromedriver".
 4. Запускаем тесты.
+5. Возможно, потребуется обновление используемых библиотек, которые прописаны в файле pom.xml проекта.
+Для обновления нужно перейти на https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java, выбрать последнюю версию и скопировать данные вот такого вида:
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.11.0</version>
+</dependency> 
+
+в pom.xml вместо устаревших. То же проделать с библиотекой junit - https://mvnrepository.com/artifact/junit/junit.
 
 В тестах проверяются положительные проверки функционала:
 
@@ -14,15 +25,18 @@
     6. Привязать бота к телеграм-боту - TelegramTest
     7. Привязать бота к MBF(Microsoft-боту) и привязать бота к скайп-боту - MBFTest
     
-    PS логины/пароли/токены во внешних ресурсах
-    Telegram 
+
+
+PS логины/пароли/токены во внешних ресурсах: 
+
+1) Telegram
 
 Name: AutoTestMappsBot
 Number: +7 (916) 235-25-98
 Token: 529094454:AAHNSE7wJ9_qCZphqIQ1WJyRlXzWgaBSiSs
 
 
-В MBF (для входа в gmail те же данные)
+2) MBF/Gmail (для входа в gmail те же данные)
 
 eyeline.api.ai@gmail.com
 
