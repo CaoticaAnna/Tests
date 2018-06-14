@@ -15,29 +15,3 @@
     5. Создать бота с помощью конструктора - ViaBuilderTest
     6. Привязать бота к телеграм-боту - TelegramTest
     7. Привязать бота к MBF(Microsoft-боту) и привязать бота к скайп-боту - MBFTest
-    
-
-
-PS логины/пароли/токены во внешних ресурсах: 
-
-1) Telegram
-
-Name: AutoTestMappsBot
-Number: +7 (916) 235-25-98
-Token: 529094454:AAHNSE7wJ9_qCZphqIQ1WJyRlXzWgaBSiSs
-
-
-2) MBF/Gmail (для входа в gmail те же данные)
-
-eyeline.api.ai@gmail.com
-
-пароль — hL3-5KY-ckC-b5E
-
-
-В MBF
-
-App Name: AutoTestMapps
-
-ID: 276f514b-0567-4b52-b393-fdbfed45e0fe
-
-App password: mwzhCCRE7@diqWTI1243$%=
